@@ -21,3 +21,5 @@ y_pred = model.predict(x_test)
 # Evaluation
 accuracy = accuracy_score(y_test, y_pred)
 print("Model Accuracy ",accuracy)
+for i in range(10):
+    print(f"Predictted: {iris.target_names[y_pred[i]]} | Actual: {iris.target_names[y_test[i]]}")
